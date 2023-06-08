@@ -52,6 +52,7 @@ let multiply = Number1end * Number2;
 
 console.log(multiply);
 
+//Exercices 1.6
 let dividende = readlineSync.question('Veuillez entrer le dividende : ?');
 let diviseur = readlineSync.question('Veuillez entrer le diviseur : ?');
 
