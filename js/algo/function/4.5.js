@@ -13,7 +13,7 @@ const distance = calcDistance(x1, x2, y1, y2);
 console.log(distance); // Affiche le résultat de l'opération réaliser dans la fonction distance. 
 //-------------------------------------------------------------------------------------------------
 function calcDistance(x1, y1, x2, y2) {
-    const distance = Math.sqrt(Math.pow((x2 - y2), 2) + Math.pow((y1 - x1), 2));
+    const distance = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
     return distance;
 }
 // function Math.sqrt => retourne le carré d'un nombre 
