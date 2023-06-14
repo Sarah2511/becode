@@ -10,8 +10,8 @@ class Person{
         return 'Salut ' + this.firstname + ' ' + this.lastname;
     }
 } 
-let firstname = readlineSync.question('Pouvez-vous entrez votre prénom svp ? ');;
-let lastname =readlineSync.question('Pouvez-vous entrez votre nom de famille svp ? ')
+let firstname = readlineSync.question('Pouvez-vous entrez votre prénom svp ? ');
+let lastname =readlineSync.question('Pouvez-vous entrez votre nom de famille svp ? ');
 
 let Sarah = new Person(firstname, lastname);
 console.log(Sarah.hello);
