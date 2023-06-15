@@ -20,4 +20,3 @@ for(i = 0; i < table.length ; i++ ){
 
 console.log('le minimum vaut : ' + min);
 console.log('le maximum vaut : ' + max);
-
