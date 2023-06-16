@@ -18,8 +18,8 @@ for (var i = 0; i < images.length; i++) {
 }
 
 // Parcourir les paragraphes en boucle (ex 2.3)
-for (var i = 0; i < paragraphs.length; i++) {
-    var paragraph = paragraphs[i];
+for (let i = 0; i < paragraphs.length; i++) {
+    let paragraph = paragraphs[i];
 
     console.log('Contenu du paragraphe:', paragraph.textContent);
 
@@ -27,12 +27,12 @@ for (var i = 0; i < paragraphs.length; i++) {
     console.log('Nom de classe:', paragraph.classList[0]);
     }
 }
-    for (var i = 0; i < allParagraphs.length; i++) {
-        var paragraph = allParagraphs[i];
+    for (let i = 0; i < allParagraphs.length; i++) {
+        let paragraph = allParagraphs[i];
 
         if (paragraph.classList.length === 0) {
         // Générer une couleur de texte aléatoire au format RGB
-        var randomColor = 'rgb(' + getRandomValue() + ',' + getRandomValue() + ',' + getRandomValue() + ')';
+        let randomColor = 'rgb(' + getRandomValue() + ',' + getRandomValue() + ',' + getRandomValue() + ')';
         
         paragraph.style.color = randomColor;
         }
