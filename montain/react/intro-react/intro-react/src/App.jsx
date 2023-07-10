@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react';
 import './App.css'
 
 function App() {
@@ -24,17 +24,17 @@ function App() {
   };
 
   return (
-    <div>
-      <h1>To Do List</h1>
+    <div className="app">
+      <h1 className="title">To Do List</h1>
       <form onSubmit={handleSubmit}>
-        <input type="text" value={task} onChange={handleChange} />
-        <button type="submit">Ajouter</button>
+        <input type="text" id="task-input" value={task} onChange={handleChange} />
+        <button type="submit" id="add-button">Ajouter</button>
       </form>
-      <ul>
+      <ul className="task-list">
         {tasks.map((task, index) => (
-          <li key={index}>
+          <li key={index} className="task-item">
             {task}
-            <button onClick={() => handleDelete(index)}>Supprimer</button>
+            <button onClick={() => handleDelete(index)} className="delete-button">Supprimer</button>
           </li>
         ))}
       </ul>
